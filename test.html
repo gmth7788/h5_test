@@ -14,8 +14,14 @@
 <!--
 <meta http-equiv="refresh" content="3; url=http://news.sina.com.cn">  页面3秒后跳转-->
 
-<!-- 使用CSS -->
-<link rel="stylesheet" type="text/css" href="css/aa.css">
+<!-- 使用CSS
+<link rel="stylesheet" type="text/css" href="css/paragraph.css">
+ -->
+ 
+<style> 
+@import "css/context.css";
+@import "css/paragraph.css";
+</style>
 
 </head>
 
@@ -198,7 +204,7 @@
 
 <form action="http://www.sina.com.cn/11.asp" methon="get">
 <!-- required属性，提交前必须填写-->
-请输入姓名：<input type="text" name="yourname" required="required"><br/>
+请输入姓名：<input type="text" name="yourname" required><br/>
 请输入网址：<input type="url" name="userurl"><br/>
 请输入邮箱：<input type="email" name="useremail"><br/>
 请选择购买商品日期：<input type="datetime-local" name="user_date"><br/>
