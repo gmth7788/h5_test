@@ -106,14 +106,36 @@
   
 </p>
 
-<!-- 创建表格 -->
+<!-- 创建表格，增加表头，主体和注脚 -->
 <table>
+	<caption>无聊的统计表</caption>
+    
+    <!--表头-->
+    <thead>
+      <tr>
+    	<th>name</th>
+        <th>sex</th>
+        <th>age</th>
+      </tr>
+    </thead>
+    
+    <!--注脚-->    
+    <tfoot>
+    <tr>
+     <td colspan="2">平均年龄</td>
+     <td>55</td> 
+    </tr>
+    </tfoot>
+    
+    
+    <!--表体-->    
 	<tr>
-    	<td rowspan="2">A1A2</td>
-        <td>B1</td> <!-- 合并上下单元格 -->
+    	<td>A1</td>
+    	<td>B1</td>
     	<td>C1</td>
     </tr>
 	<tr>
+    	<td>A2</td>
     	<td>B2</td>
     	<td>C2</td>
     </tr>
@@ -127,6 +149,7 @@
     	<td>B4</td>
     	<td>C4</td>
     </tr>
+    
 </table>
 
 
