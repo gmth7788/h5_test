@@ -195,11 +195,13 @@
 </form>
 
 <form action="http://www.sina.com.cn/11.asp" methon="get">
-请输入姓名：<input type="text" name="yourname"><br/>
+<!-- required属性，提交前必须填写-->
+请输入姓名：<input type="text" name="yourname" required="required"><br/>
 请输入网址：<input type="url" name="userurl"><br/>
 请输入邮箱：<input type="email" name="useremail"><br/>
 请选择购买商品日期：<input type="datetime-local" name="user_date"><br/>
 给我打个分吧：<input type="number" name="scores" max=100 min=0><br/>
+再给我打个分吧：<input type="range" name="scores1" max=100 min=0><br/>
 <input type="submit" value="提交">
 <input type="reset" value="重置">
 
